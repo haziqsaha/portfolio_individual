@@ -1,0 +1,102 @@
+body {
+    background-image: url("alexander-popov-unsplash.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.navi {
+    width: 100%;
+}
+.navi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.3);
+    position: sticky;
+    top: 0;
+}
+  
+.navi li {
+    float: left;
+    border-right:1px solid lightgray;
+    font-family: alegreya;
+}
+  
+.navi li:last-child {
+    border-right: none;
+}
+  
+.navi li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navi li a:hover:not(.active) {
+    background-color: rgba(226, 11, 58, 0.596);
+    color: black;
+}
+  
+.music:hover {
+    color: crimson;
+}
+
+.active {
+    background-color: crimson;
+    color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: crimson;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: white;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: crimson;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

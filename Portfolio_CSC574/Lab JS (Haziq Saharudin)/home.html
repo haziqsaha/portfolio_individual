@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<style>
+    .column1 {
+      float: left;
+      width: 70%;
+      padding: 10px;
+    }
+    .column2 {
+      float: right;
+      width: 30%;
+      padding: 10px;
+      background-color: crimson;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div style="background-color: crimson;"class="w3-padding w3-xlarge w3-text-white">
+        <p><button class="w3-btn w3-white w3-xlarge" onclick="document.getElementById('id01').style.display='block'">
+        <i class="fa fa-bars"> Menu</i></button></p>
+        <p  style="font-family: 'Courier New', Courier, monospace;" class="w3-text-white w3-display-topright w3-large">
+        <button class="w3-btn w3-large"><a href="PersonalInformationCSS.html">Haziq Saharudin</a></button></p>
+        <div id="id01" class="w3-panel w3-display-container" style="display:none">
+            <span onclick="this.parentElement.style.display='none'"
+            class="w3-button w3-white w3-text-black w3-display-topright w3-large">x</span>
+            <a href="calculator.html">Calculator</a>
+        </div>
+    </div>
+    <div class="row">
+    <div class="column1">
+        <h1 style="text-align: center; font-family: Impact">Welcome!</h1>
+        <h2 style="text-align: center; font-family: verdana">Feel free to try my Simple Calculator &#128516;</h2>
+        <p style="text-align: center;">
+            <button style="background-color: crimson;" class="w3-btn w3-text-white w3-xlarge w3-round-xxlarge">
+                <a href="calculator.html">Start</a>
+            </button>
+        </p>
+    </div>
+    <div style="text-align: center;" class="column2">
+        <iframe src="https://open.spotify.com/embed/playlist/40DIomV9ES2y8hYLGquWEF" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
+        </iframe>
+    </div>
+    </div>
+</body>
+</html>

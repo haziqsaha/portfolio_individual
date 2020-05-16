@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<style>
+.column1 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+}
+.column2 {
+  float: right;
+  width: 30%;
+  padding: 10px;
+  background-color: crimson;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div style="background-color: crimson;"class="w3-padding w3-xlarge w3-text-white">
+        <p><button class="w3-btn w3-white w3-xlarge"><a href="home.html"><i class="fa fa-home"></i></a></button></p>
+        
+    </div>
+
+    <div class="row">
+    <div class="column1">
+    <h1 style="font-family: Impact;">Simple Calculator</h1>
+    <form style="font-family: verdana;">
+        First Number: <input type="text" id="firstNum"/><br>
+        <p style="color: white; font-size: 30%;">gap</p>
+        Second Number: <input type="text" id="secondNum"/><br>
+        <p style="color: white; font-size: 30%;">gap</p>
+        <input type="button" onclick="addBy()" value="Addition"/>
+        <input type="button" onclick="substractBy()" value="Substraction"/>
+        <input type="button" onclick="multiplyBy()" value="Multiplication"/>
+        <input type="button" onclick="divideBy()" value="Division"/>
+    </form>
+    <div style="background-color: crimson;">
+        <p style="font-family: verdana;">Result: <br>
+            <span id="result"></span>
+        </p>
+    </div>
+    </div>
+    <div style="text-align: center;" class="column2">
+        <iframe src="https://open.spotify.com/embed/playlist/40DIomV9ES2y8hYLGquWEF" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
+        </iframe>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

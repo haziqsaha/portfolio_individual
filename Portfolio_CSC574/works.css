@@ -1,0 +1,39 @@
+.header {
+    padding: 20px;
+    text-align: center;
+    background-image: url("brandi-redd-unsplash.jpg");
+    background-size: cover;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    float: left;
+    width: 47%;
+    padding: 15px;
+}
+  
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+  }
+  
+h2:hover {
+    background-color: white;
+    color: crimson;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="feedback.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital@1&family=Inknut+Antiqua:wght@500&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Condiment&display=swap" rel="stylesheet">
+    <title>Portfolio Feedback</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <h1 style="color: crimson;font-family:'space mono';">Dean - Instagram</h1>
+            <audio controls>
+                <source src="dean-instagram.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+    <h1 style="text-align: center;"><img src="HALAbrush.png" alt="logo" style="width: 200px;"/></h1>
+    <div class="navi">
+        <img src="HALA-logo.png" alt="logo" style="float: left; width: 3px; height: 3px;"/>
+        <ul>
+            <li><a href="PortfolioMP.html"><i class="fa fa-home"></i></a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="works.html">PREVIOUS WORKS</a></li>
+            <li class="active" style="border-right: none;"><a href="#feedback">FEEDBACK</a></li>
+            <li style="float: right;"><a href="contact.html">CONTACT</a></li>
+          </ul>
+    </div>
+    <div class="music">
+        <span style="font-family:'space mono';float:right;font-size:15px;cursor:pointer" onclick="openNav()">MUSIC <i class="fa fa-play"></i></span>
+    </div>
+    <div class="row">
+    <div class="column">
+    <div class="container" style="text-align: left;width:60%;margin-left: auto;margin-right: auto;">
+        <form name="myform" action="/action_page.php" onsubmit="return validateForm()" method="POST">
+            <label for="fname">Name</label>
+            <input type="text" id="name" name="name" placeholder="Insert your name..">
+      
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Insert your country.." 
+      
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </div>
+    </div>
+    <div><p></p></div>
+    <div>
+        <video width="40%" controls>
+            <source src="Hala.mp4" type="video/mp4">
+        </video>
+        <p style="font-family:yellowtail;text-align:center;font-size: 150%;">Advertisment by</p>
+        <p><img src="HALA-jersey.png" alt="logo3" style="width: 10%;height: auto;"/></p>
+    </div>
+    <div><p></p></div>
+    <div class="footer">
+        <p style="color: black;">a</a></p>
+        <h3 style="font-family: condiment,cursive;">Made by HS.</h3>
+        <p style="font-family: yellowtail;"><i class="fa fa-instagram"> hzqsaha</i></p>
+        <p style="color: black;">a</a></p>
+    </div>
+</body>
+</html>
